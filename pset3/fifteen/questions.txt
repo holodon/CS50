@@ -1,0 +1,4 @@
+0. From 3x3 to 9x9 inclusive.
+1. 2D-Array of integers.
+2. greet
+3. init, draw, move, won

@@ -1,0 +1,87 @@
+cs50 austinpowers
+
+WORDS MISSPELLED:     644
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        19190
+TIME IN load:         0.03
+TIME IN check:        0.01
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.05
+
+alice
+
+WORDS MISSPELLED:     295
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        29758
+TIME IN load:         0.02
+TIME IN check:        0.02
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.05
+
+austen
+
+WORDS MISSPELLED:     1614
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        125203
+TIME IN load:         0.04
+TIME IN check:        0.08
+TIME IN size:         0.00
+TIME IN unload:       0.03
+TIME IN TOTAL:        0.15
+
+holmes
+
+WORDS MISSPELLED:     17845
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        1150970
+TIME IN load:         0.03
+TIME IN check:        0.84
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.88
+
+kjv
+
+WORDS MISSPELLED:     33441
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        799460
+TIME IN load:         0.04
+TIME IN check:        0.58
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        0.62
+
+m
+
+WORDS MISSPELLED:     204803
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        7043213
+TIME IN load:         0.03
+TIME IN check:        5.13
+TIME IN size:         0.00
+TIME IN unload:       0.01
+TIME IN TOTAL:        5.17
+
+me: m
+
+WORDS MISSPELLED:     204803
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        7043213
+TIME IN load:         0.11
+TIME IN check:        4.51
+TIME IN size:         0.00
+TIME IN unload:       0.06
+TIME IN TOTAL:        4.68
+
+me: m (big hash)
+
+WORDS MISSPELLED:     204803
+WORDS IN DICTIONARY:  143091
+WORDS IN TEXT:        7043213
+TIME IN load:         0.06
+TIME IN check:        4.10
+TIME IN size:         0.00
+TIME IN unload:       0.02
+TIME IN TOTAL:        4.18

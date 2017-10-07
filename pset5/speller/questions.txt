@@ -1,0 +1,17 @@
+0.  According to Merriam-Webster's Medical Dictionary,
+pneumonoultramicroscopicsilicovolcanoconiosis is a
+pneumoconiosis caused by inhalation of very fine
+silicate or quartz dust.
+1.  returns resource usage
+2.  16
+3.  speed - we do not have to copy their values first
+4.  The "for" loop reads from the text file one character at a time until EOF. 
+For every character it checks for the possibilities: 
+    - all alphabetical characters (or '\'' when not at the first position) get added to a word buffer until reaching something else
+    - all words longer than LENGTH get ignored (all their characters get read to advance in the file but then not processed)
+    - all words containing numbers get ignored (like above)
+After it fills a word in the buffer (sentence from alphabeticals followed by something else), adds '\0' to finish the string,
+updates the counter and checks the word in the dictionary measuring the time needed to do so.
+5. with fscanf we cannot control precisely what we mean by "word" 
+    - if we use fscanf we have to process its result one more time to check for length, numbers, non-alphabetical characters etc
+6. They do not change locally in the function; better readability; maintenance-friendly

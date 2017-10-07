@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+                <th>BUY/SELL</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4"></td>
+                <td>{{ total }}</td>
+                <td></td>
+            </tr>
+        </tfoot>
+        <tbody>
+                {% for stock in stocks %}
+                <tr>
+                    <td>{{ stock["symbol"] }}</td>
+                    <td>{{ stock["name"] }}</td>
+                    <td>{{ stock["shares"] }}</td>
+                    <td>{{ stock["curr_price"] }}</td>
+                    <td>{{ stock["total"] }}</td>
+                    <td>
+                        <form action="{{ url_for('buy_sell') }}" method="post">
+                            <input type="hidden" name="symbol" value="{{ stock["symbol"] }}" />
+                            <input class="small_input" autocomplete="off" name="shares" placeholder="+/-Shares" type="text"/>
+                            <button class="btn btn-default small_btn" type="submit">Go!</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+
+            <tr>
+                <td colspan="4">CASH</td>
+                <td>{{ cash }}</td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

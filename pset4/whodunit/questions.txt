@@ -1,0 +1,12 @@
+1.  Header defining fixed width integer types.
+2.  Better portability
+3.  BYTE (uint8_t): 1 byte, DWORD (uint32_t): 4 bytes, LONG (int32_t): 4 bytes, WORD (uint16_t): 2 bytes 
+4.  'BM', 19778, 0x4D42
+5.  bfSize: The size, in bytes, of the bitmap file. biSize: The number of bytes required by the structure.
+6.  biHeight negative: The bitmap is top-down
+7.  biBitCount: bits per pixel
+8.  If the file does not exists; or can't be read
+9.  Read one block (BITMAPFILEHEADER or BITMAPINFOHEADER etc) at a time.
+10. 3
+11. Skips a few bytes in the file (in our case the padding)
+12. Current position indicator in the opened file
